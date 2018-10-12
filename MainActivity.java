@@ -1,4 +1,3 @@
-package com.example.lenovo.squlite_data;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
