@@ -1,4 +1,3 @@
-package com.example.lenovo.squlite_data;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,8 +17,8 @@ public class display extends AppCompatActivity {
         name=(TextView)findViewById(R.id.textView1);
         mobile=(TextView)findViewById(R.id.textView3);
         city=(TextView)findViewById(R.id.textView5);
-        db= openOrCreateDatabase("harsh.db",MODE_PRIVATE,null);
-        Cursor cursor=db.rawQuery("select * from hj",null);
+        db= openOrCreateDatabase("abc.db",MODE_PRIVATE,null);
+        Cursor cursor=db.rawQuery("select * from xyz",null);
         while(cursor.moveToNext()) {
             name.setText(cursor.getString(0));
             mobile.setText(cursor.getString(1));
